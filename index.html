@@ -63,13 +63,7 @@
             status: "פעיל"
         };
 
-        const videosData = [
-            {
-                title: "ספריית סרטוני טכניקה",
-                category: "תיקיית Google Drive",
-                url: "https://drive.google.com/drive/folders/1aZxxnuuyu_lISKg25wI2vU8tubf1GecS"
-            }
-        ];
+        const videosData = [];
 
         // נתוני אימונים של אריאל
         const progressData = {
@@ -77,18 +71,20 @@
                 { date: 'נוכחי', weight: 0 }, 
             ],
             strength: [
-                { exercise: 'לחיצת חזה עליון בסמית', prev: 17.5, current: 20, reps: '6', sets: '-', note: 'כל צד' },
-                { exercise: 'פולי עליון במכונה', prev: 37.5, current: 42.5, reps: '6', sets: '-', note: 'כל צד' },
+                { exercise: 'לחיצת חזה עליון בסמית', prev: 17.5, current: 22.5, reps: '6', sets: '-', note: 'כל צד' },
+                { exercise: 'לחיצת כתפיים מאחורי הראש בסמית', prev: 10, current: 10, reps: '8', sets: '-', note: 'כל צד' },
+                { exercise: 'פולי עליון במכונה', prev: 37.5, current: 45, reps: '6', sets: '-', note: 'כל צד' },
                 { exercise: 'הרחקות כתפיים בישיבה', prev: 6, current: 8, reps: '6', sets: '-' },
                 { exercise: 'חתירה רחבה', prev: 35, current: 40, reps: '6', sets: '-', note: 'כל צד' },
+                { exercise: 'טייבר', prev: 37.5, current: 37.5, reps: '6', sets: '-' },
                 { exercise: 'מקבילים בגרביטון', prev: -63, current: -49, reps: '6', sets: '-', note: 'עזרה: 49 ק"ג' },
                 { exercise: 'כומר במכונה', prev: 17.5, current: 17.5, reps: '8', sets: '-' },
                 { exercise: 'כפיפת ברכיים בישיבה', prev: 10, current: 45, reps: '6', sets: '-' },
-                { exercise: 'כפיפת ברכיים בשכיבה', prev: 11, current: 11, reps: '6', sets: '-' },
+                { exercise: 'כפיפת ברכיים בשכיבה', prev: 11, current: 11, reps: '5', sets: '-' },
                 { exercise: 'לחיצת רגליים', prev: 170, current: 175, reps: '8', sets: '-' },
-                { exercise: 'האק סקוואט', prev: 100, current: 100, reps: '6', sets: '-' },
+                { exercise: 'האק סקוואט', prev: 100, current: 110, reps: '6', sets: '-' },
                 { exercise: 'רומני', prev: 40, current: 40, reps: '8', sets: '-' },
-                { exercise: 'פרפר משקולות', prev: 7, current: 7, reps: '8', sets: '-' },
+                { exercise: 'פרפר משקולות', prev: 7, current: 9, reps: '6', sets: '-' },
                 { exercise: 'הרחקות כתף קדמית', prev: 4, current: 4, reps: '8', sets: '-' },
                 { exercise: 'פטישים בחבל', prev: 22.5, current: 22.5, reps: '6', sets: '-' },
                 { exercise: 'כפיפות בטן (ללא שיפוע)', prev: 0, current: 0, reps: '8', sets: '-', note: 'משקל גוף' }
@@ -301,7 +297,7 @@
                     <div class="relative z-10">
                         <span class="text-orange-200 text-xs font-bold tracking-wider uppercase">ספריית VOD</span>
                         <h2 class="text-2xl font-bold text-white mt-1">הדרכות טכניקה</h2>
-                        <p class="text-orange-100 text-sm mt-2 opacity-90">כל סרטוני הטכניקה מרוכזים בתיקייה אחת.</p>
+                        <p class="text-orange-100 text-sm mt-2 opacity-90">דגשים לביצוע נכון ומניעת פציעות</p>
                     </div>
                     <i data-lucide="play-circle" class="absolute -bottom-4 -left-4 text-white/10 w-32 h-32 transform rotate-12"></i>
                 </div>
@@ -312,7 +308,7 @@
                             <div class="flex justify-between items-start">
                                 <div class="flex gap-4">
                                     <div class="bg-slate-900 h-12 w-12 rounded-lg flex items-center justify-center group-hover:bg-orange-500/10 transition-colors">
-                                        <i data-lucide="folder-open" class="w-6 h-6 text-orange-500"></i>
+                                        <i data-lucide="play-circle" class="w-6 h-6 text-orange-500"></i>
                                     </div>
                                     <div>
                                         <h4 class="font-bold text-slate-100 group-hover:text-orange-400 transition-colors">${video.title}</h4>
@@ -434,6 +430,3 @@
     </script>
 </body>
 </html>
-
-
-```
